@@ -1,0 +1,31 @@
+<% layout('layouts/boilerplate')%>
+    <div class="row">
+        <h1 class="text-center" style="margin: 40px 0;">Datazen Event 2021</h1>
+        <div class="col-6 offset-3">
+            <form action="/register/new" method="POST" novalidate class="validated-form">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Full Name</label>
+                    <input class="form-control" type="text" id="title" name="customer[Name]" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="location">Phone Number</label>
+                    <input class="form-control" type="tel" id="location" name="customer[Phone]" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email Id</label>
+                    <input class="form-control" type="email" id="email" name="customer[Mail]">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Name of the Institute</label>
+                    <input class="form-control" type="text" id="title" name="customer[institute]" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="title">Age</label>
+                    <input class="form-control" type="number" id="title" name="customer[age]" required>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-outline-dark" style="border-radius: 12px;font-size: 15px;" >Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
